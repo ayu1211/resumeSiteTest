@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000; /* or just 'black' */
+}
+/* --- Custom Scrollbar for Chrome, Edge, and Safari --- */
+
+/* 1. Set the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* 2. Style the "track" (the background of the bar) */
+::-webkit-scrollbar-track {
+  background: #000; /* Black, to match the body */
+}
+
+/* 3. Style the "thumb" (the part you drag) */
+::-webkit-scrollbar-thumb {
+  background: #333; /* A dark gray, similar to Netflix's */
+  border-radius: 5px; /* Makes it rounded */
+}
+
+/* 4. Style the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* A lighter gray for hover effect */
+}
+
+/* --- Custom Scrollbar for Firefox --- */
+/* This provides a simpler dark scrollbar for Firefox */
+html {
+  scrollbar-color: #333 #000; /* (thumb color) (track color) */
+}
